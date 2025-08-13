@@ -29,6 +29,7 @@ start_time = time.time()
 liste = [i for i in range(1000000)]
 end_time = time.time()
 print(f"Temps d'exécution avec compréhension de liste: {end_time - start_time} secondes")
+print(f"-------------------------------------------------------------- ")
 
 liste = ['a', 'b', 'c', 'd'] * 250000
 
@@ -38,6 +39,7 @@ for i in range(len(liste)):
     _ = liste[i]
 end_time = time.time()
 print(f"Temps d'exécution avec range: {end_time - start_time} secondes")
+print(f"-------------------------------------------------------------- ")
 
 # Mesurer le temps pour enumerate
 start_time = time.time()
@@ -45,6 +47,7 @@ for i, val in enumerate(liste):
     _ = val
 end_time = time.time()
 print(f"Temps d'exécution avec enumerate: {end_time - start_time} secondes")
+print(f"-------------------------------------------------------------- ")
 
 # range dans les Boucles vs Itérateurs/Générateurs :
 # Les itérateurs et les générateurs offrent plus de flexibilité et peuvent être plus efficaces pour itérer sur des
@@ -57,6 +60,7 @@ for i in range(1000000):
     pass
 end_time = time.time()
 print(f"Temps d'exécution avec range: {end_time - start_time} secondes")
+print(f"-------------------------------------------------------------- ")
 
 # Mesurer le temps pour un générateur
 def compteur(max):
