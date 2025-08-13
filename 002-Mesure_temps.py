@@ -22,6 +22,7 @@ for i in range(1000000):
     pass
 end_time = time.time()
 print(f"Temps d'exécution avec range: {end_time - start_time} secondes")
+print(f"-------------------------------------------------------------- ")
 
 # Mesurer le temps pour la compréhension de liste
 start_time = time.time()
